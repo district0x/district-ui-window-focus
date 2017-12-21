@@ -51,7 +51,8 @@ re-frame events provided by this module:
 Event fired at mount start.
 
 #### `::set-focused [focused?]`
-Sets whether window/tab is focused
+Event fired when window/tab is focused or blurred. You may want to use [re-frame-forward-events-fx](https://github.com/Day8/re-frame-forward-events-fx)
+to hook into this event.    
 
 #### `::stop`
 Cleanup event fired on mount stop.
