@@ -50,7 +50,7 @@ re-frame events provided by this module:
 #### `::start [opts]`
 Event fired at mount start.
 
-#### `::set-focused [focused?]`
+#### `::focus-changed [focused?]`
 Event fired when window/tab is focused or blurred. You may want to use [re-frame-forward-events-fx](https://github.com/Day8/re-frame-forward-events-fx)
 to hook into this event.    
 

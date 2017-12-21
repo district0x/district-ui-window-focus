@@ -25,7 +25,7 @@
 
       (is (true? @focused?))
 
-      (dispatch [::events/set-focused false])
+      (dispatch [::events/focus-changed false])
 
       (is (false? @focused?)))))
 

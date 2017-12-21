@@ -8,13 +8,13 @@
   ::start
   (fn [{:keys [:db]}]
     {:db (queries/assoc-focused db true)
-     :window/on-focus {:dispatch [::set-focused true]
+     :window/on-focus {:dispatch [::focus-changed true]
                        :id ::on-focus}
-     :window/on-blur {:dispatch [::set-focused false]
+     :window/on-blur {:dispatch [::focus-changed false]
                       :id ::on-blur}}))
 
 (reg-event-fx
-  ::set-focused
+  ::focus-changed
   [trim-v]
   (fn [{:keys [:db]} [focused?]]
     {:db (queries/assoc-focused db focused?)}))
