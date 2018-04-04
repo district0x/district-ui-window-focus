@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/district0x/district-ui-window-focus.svg?branch=master)](https://travis-ci.org/district0x/district-ui-window-focus)
 
-Clojurescript [mount](https://github.com/tolitius/mount) + [re-frame](https://github.com/Day8/re-frame) module for a district UI, that handles browser window/tab focus.
+Clojurescript [re-mount](https://github.com/district0x/d0x-INFRA/blob/master/re-mount.md) module, that handles browser window/tab focus.
 
 ## Installation
 Add `[district0x/district-ui-window-focus "1.0.0"]` into your project.clj  
